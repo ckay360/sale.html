@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plot for Sale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .ad-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .ad-container:hover {
+            transform: translateY(-10px);
+        }
+        
+        .land-icon {
+            font-size: 80px;
+            color: #667eea;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .features {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .features h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .features ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .features li {
+            color: #495057;
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .contact-text {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .phone-number {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .phone-number:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .call-to-action {
+            font-size: 1.1em;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        
+        .urgent-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+        
+        .container-wrapper {
+            position: relative;
+        }
+        
+        @media (max-width: 600px) {
+            .ad-container {
+                padding: 25px;
+            }
+            
+            .title {
+                font-size: 2em;
+            }
+            
+            .phone-number {
+                font-size: 1.5em;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="urgent-badge">HOT DEAL!</div>
+        <div class="ad-container">
+            <div class="land-icon">🏞️</div>
+            <h1 class="title">PREMIUM PLOT</h1>
+            <p class="subtitle">Available for SALE • LEASE • RENT</p>
+            
+            <div style="background: linear-gradient(45deg, #28a745, #20c997); color: white; padding: 15px; border-radius: 10px; margin: 20px 0; font-weight: bold; font-size: 1.2em;">
+                📍 TSE ADDO, NEAR VISION SEED SCHOOL
+            </div>
+            
+            <div class="features">
+                <h3>🎯 Flexible Investment Opportunity</h3>
+                <ul>
+                    <li>Available for purchase, lease, or rental</li>
+                    <li>Strategic location with excellent accessibility</li>
+                    <li>Clear documentation and proper title</li>
+                    <li>Suitable for residential or commercial development</li>
+                    <li>Growing neighborhood with great potential</li>
+                    <li>Ready for immediate development or occupation</li>
+                </ul>
+            </div>
+            
+            <div class="contact-section">
+                <p class="contact-text">💰 Multiple Options Available: SALE | LEASE | RENT</p>
+                <p class="contact-text">📞 For Pricing Details & Site Inspection:</p>
+                <div class="phone-number" onclick="window.location.href='tel:0596011280'">
+                    0596011280
+                </div>
+                <p class="call-to-action">
+                    📱 Call now for exclusive pricing and viewing arrangement!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
